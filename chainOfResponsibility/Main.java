@@ -7,15 +7,14 @@ public class Main {
 		try {
 
 			CorrenteProduto corrente = new TV();
-			corrente.setProximo(new Colchao());
 			corrente.setProximo(new Geladeira());
 			corrente.setProximo(new SmartPhone());
+			corrente.setProximo(new Colchao());
 
-			corrente.buscarProduto(NomeProduto.TV);
+			corrente.buscarProduto(NomeProduto.GELADEIRA);
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-			e.printStackTrace();
 		}
 
 	}

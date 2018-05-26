@@ -12,3 +12,4 @@ public class TV extends CorrenteProduto {
 	}
 
 }
+

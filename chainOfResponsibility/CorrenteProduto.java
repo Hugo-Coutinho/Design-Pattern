@@ -6,6 +6,7 @@ public abstract class CorrenteProduto {
 	protected CorrenteProduto proximo;
 	protected NomeProduto nome;
 
+	
 	public CorrenteProduto(NomeProduto nome) {
 		proximo = null;
 		this.nome = nome;
@@ -33,12 +34,13 @@ public abstract class CorrenteProduto {
 	}
 
 	private boolean validaProduto(NomeProduto nomeProd) {
-		if (this.proximo.nome == nomeProd) {
+		if (this.nome == nomeProd) {
 			return true;
 		}
 		return false;
 	}
 
 	public abstract void comprarProduto();
+	
 
 }
