@@ -20,7 +20,7 @@ public abstract class CorrenteProduto {
 		}
 	}
 
-	protected void buscarProduto(NomeProduto nomeProduto) throws Exception {
+	protected void buscarProdutoParaCompra(NomeProduto nomeProduto) throws Exception {
 
 		if (validaProduto(nomeProduto)) {
 			comprarProduto();
@@ -28,7 +28,7 @@ public abstract class CorrenteProduto {
 			if (proximo == null) {
 				throw new Exception("produto não cadastrado para compra");
 			}
-			proximo.buscarProduto(nomeProduto);
+			proximo.buscarProdutoParaCompra(nomeProduto);
 		}
 
 	}

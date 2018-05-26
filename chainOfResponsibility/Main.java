@@ -11,7 +11,7 @@ public class Main {
 			corrente.setProximo(new SmartPhone());
 			corrente.setProximo(new Colchao());
 
-			corrente.buscarProduto(NomeProduto.GELADEIRA);
+			corrente.buscarProdutoParaCompra(NomeProduto.GELADEIRA);
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
